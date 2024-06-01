@@ -2,6 +2,10 @@ const getSumBtn = document.createElement("button");
 getSumBtn.append("Get Total Price");
 document.body.appendChild(getSumBtn);
 
+
+var totalDiv = document.getElementById('ans');
+totalDiv.textContent = 'Total: ' + totalPrice;
+
 const getSum = () => {
     const priceElements = document.querySelectorAll('.price');
     let totalPrice = 0;
